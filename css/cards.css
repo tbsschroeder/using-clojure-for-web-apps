@@ -1,0 +1,55 @@
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-space {
+  flex: 0 1 22%;
+  margin: 0.25em !important;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+/*
+.card p {
+  font-size: 1.3em !important;
+}
+*/
+
+.card:nth-child(1) {
+  background-color: rgb(255, 168, 68);
+  font-weight: 800;
+}
+
+.card:nth-child(2) {
+  background-color: rgb(233, 90, 68);
+  font-weight: 800;
+}
+
+.card:nth-child(3) {
+  background-color: rgb(119, 71, 231);
+  font-weight: 800;
+}
+
+.card:nth-child(4) {
+  background-color: rgb(57, 143, 255);
+  font-weight: 800;
+}
+
+
+.col1 {
+  color: rgb(255, 168, 68) !important;
+}
+
+.col2 {
+  color: rgb(233, 90, 68) !important;
+}
+
+.col3 {
+  color: rgb(119, 71, 231) !important;
+}
+
+.col4 {
+  color: rgb(57, 143, 255) !important;
+}
