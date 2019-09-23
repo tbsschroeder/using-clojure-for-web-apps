@@ -27,10 +27,10 @@
 
       <section class="center" data-background-image="img/bg/codetalks.png">
         <span>Dr. Tobias Schröder</span>
-        <br><br>
-        <h1 class="bebas">No Pain, no Gain</h1>
-        <!-- Maybe use a class="subtitle" here -->
-        <h5>Using Clojure for Web Applications</h5>
+        <br>
+        <br>
+        <h1>No Pain, no Gain</h1>
+        <h1>Using Clojure for Web Applications</h1>
         <br>
         <span>Backend</span>
       </section>
@@ -61,33 +61,9 @@
             <p class="fragment fade-in">Interop</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in">REPL</p>
+            <p class="fragment fade-in">Immutability</p>
           </div>
         </div>
-        <!--
-        <div class="flex-wrap">
-          <h4 class="col1 card-space">
-            <strong>(</strong>
-            <span class="fragment fade-in">Simplicity</span>
-            <strong>)</strong>
-          </h4>
-          <h4 class="col2 card-space">
-            <strong>(</strong>
-            <span class="fragment fade-in">LISP</span>
-            <strong>)</strong>
-          </h4>
-          <h4 class="col3 card-space">
-            <strong>(</strong>
-            <span class="fragment fade-in">Interop</span>
-            <strong>)</strong>
-          </h4>
-          <h4 class="col4 card-space">
-            <strong>(</strong>
-            <span class="fragment fade-in">REPL</span>
-            <strong>)</strong>
-          </h4>
-        </div>
-        -->
       </section>
 
       <section class="center">
@@ -122,7 +98,7 @@
       <section class="center">
         <ul class="fira no-bullet-points extra-padding-list">
           <li>
-            <p class="fragment fade-in"><span class="clj-symbol">map</span>([🐮,🥔,🐔,🌽), cook]</p>
+            <p><span class="clj-symbol">map</span>([🐮,🥔,🐔,🌽), cook]</p>
             <p class="fragment fade-in"><span class="clj-res">=></span> [🍔,🍟,🍗,🍿]</p>
           </li>
           <li>
@@ -138,29 +114,29 @@
 
       <section class="center">
         <ul class="fira no-bullet-points extra-padding-list">
-          <li>
-            <p class="fragment fade-in">(<span class="clj-symbol">def</span> x 42)</p>
-            <p class="fragment fade-in">x</p>
-            <p class="fragment fade-in"><span class="clj-res">=> 42</span></p>
+          <li class="fragment fade-in" data-fragment-index="0">
+            <p>(<span class="clj-symbol">def</span> x 42)</p>
+            <p>x</p>
+            <p><span class="clj-res">=> 42</span></p>
           </li>
-          <li>
-            <p class="fragment fade-in">(<span class="clj-symbol">defn</span> <span class="clj-arg">square</span> <span
+          <li class="fragment fade-in" data-fragment-index="1">
+            <p>(<span class="clj-symbol">defn</span> <span class="clj-arg">square</span> <span
                 class="clj-p1">[<span class="clj-arg">num</span>] (<span class="clj-symbol">*</span> <span
                   class="clj-arg">num</span> <span class="clj-arg">num</span>)</span>)</p>
-            <p class="fragment fade-in">(<span class="clj-symbol">square</span> 4)</p>
-            <p class="fragment fade-in"><span class="clj-res">=> 16</span></p>
+            <p>(<span class="clj-symbol">square</span> 4)</p>
+            <p><span class="clj-res">=> 16</span></p>
           </li>
-          <li>
-            <p class="fragment fade-in">(<span class="clj-symbol">map</span> <span class="clj-arg">square</span> <span
+          <li class="fragment fade-in" data-fragment-index="2">
+            <p>(<span class="clj-symbol">map</span> <span class="clj-arg">square</span> <span
                 class="clj-p1">[<span class="clj-arg">1 2 3</span>]</span>)</p>
-            <p class="fragment fade-in"><span class="clj-res">=> (1 4 9)</span></p>
+            <p><span class="clj-res">=> (1 4 9)</span></p>
           </li>
-          <li>
-            <p class="fragment fade-in">(<span class="clj-symbol">reduce</span> <span class="clj-arg">+</span> <span
+          <li class="fragment fade-in" data-fragment-index="3">
+            <p>(<span class="clj-symbol">reduce</span> <span class="clj-arg">+</span> <span
                 class="clj-p1">(<span class="clj-symbol">map</span> <span class="clj-arg">square</span> <span
                   class="clj-p2">[<span class="clj-arg">1 2 3</span>]</span>)</span>)</p>
-            <p class="fragment fade-in" style="color: gray">;(reduce (+ [1 2 3]))</p>
-            <p class="fragment fade-in"><span class="clj-res">=> 14</span></p>
+            <p style="color: gray">;(reduce (+ [1 2 3]))</p>
+            <p><span class="clj-res">=> 14</span></p>
           </li>
         </ul>
       </section>
@@ -170,18 +146,18 @@
       </section>
       -->
 
-      <section data-background-image="img/bg/spider.jpg">
+      <section data-background-image="img/bg/hacker.jpg">
         <div style="overflow: hidden">
           <div style="width: 30%; float: left">
             <ul class="no-bullet-points">
-              <li class="list-bg fragment fade-in">Backend
+              <li class="list-bg-blue fragment fade-in">Backend
                 <ul>
                   <li>Web Server</li>
                   <li>Database</li>
                 </ul>
               </li>
               <br>
-              <li class="list-bg fragment fade-in">Frontend
+              <li class="list-bg-blue fragment fade-in">Frontend
                 <ul>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -189,9 +165,9 @@
                 </ul>
             </ul>
           </div>
-          <div style="float: left; margin-left: -0.25em; padding-top: 1.5em;">
+          <div style="float: right; padding-top: 1.5em;">
             <ul class="no-bullet-points" style="float:left">
-              <li class="list-bg fragment fade-in">Libraries
+              <li class="list-bg-blue fragment fade-in">Libraries
                 <ul>
                   <li>Pedestal</li>
                   <li>Component</li>
@@ -299,7 +275,7 @@
       </section>
 
       <section data-background-image="img/bg/component.jpg">
-        <div class="list-bg" style="position: fixed; top: 3em; left: 0em;">
+        <div class="list-bg" style="position: fixed; top: 1em; left: 0em;">
           <h3>Component</h3>
           <ul>
             <li>Immutable data structure</li>
@@ -338,9 +314,10 @@
       </section>
 
       <section data-background-image="img/bg/hiccup.jpg">
-        <div class="center list-dark-bg fragment fade-in" style="width: 40%; margin-top: 10em;">
+        <div class="center list-dark-bg fragment fade-in" style="width: 35%; margin-top: 10em;">
           <h3>Hiccup</h3>
           <ul>
+            <li>Representing HTML</li>
             <li>Vectors for elements</li>
             <li>Maps for attributes</li>
           </ul>
@@ -349,6 +326,43 @@
       
       <section class="center">
         <img src="img/hiccup.png" style="width: 100%">
+      </section>
+
+      <section data-background-image="img/bg/hacker.jpg">
+        <div style="overflow: hidden">
+          <div style="width: 30%; float: left">
+            <ul class="no-bullet-points">
+              <li class="list-bg-blue">Backend
+                <ul>
+                  <li>Web Server</li>
+                  <li>Database</li>
+                </ul>
+              </li>
+              <br>
+              <li class="list-bg-blue">Frontend
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+            </ul>
+          </div>
+          <div style="float: right; padding-top: 1.5em;">
+            <ul class="no-bullet-points" style="float:left">
+              <li class="list-bg-blue">Libraries
+                <ul>
+                  <li>Pedestal</li>
+                  <li>Component</li>
+                  <li>Korma</li>
+                  <li>Ring</li>
+                  <li>Hiccup</li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="list-bg-orange fragment fade-in" style="width: 6em; position: fixed; left: 10em; bottom: 5.1em;">
+          <span>ClojureScript</span>
+        </div>
       </section>
 
       <section class="center">
@@ -366,16 +380,18 @@
         </h3>
       </section>
 
-      <section data-background-image="img/bg/johnlennon-color.jpg">
+      <section data-background-image="img/bg/johnlennon.jpg">
+        <!--
         <div class="list-dark-bg center" style="width: 42%">
           <div style="text-align: justify;">
             You may say I'm a dreamer<br>
             But I'm not the only one<br>
-            I hope to day you'll join us<br>
+            I hope <i>today</i> you'll join us<br>
             And the world will be as one
           </div>
           <p style="text-align: right"> John Lennon (1971)</p>
         </div>
+        -->
       </section>
 
     </div>

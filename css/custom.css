@@ -79,10 +79,32 @@ ul li{
     color: #ffd900 !important;
 }
 
+.clj-core {
+    color: #f92672 !important
+}
+.clj-func {
+    color: #a6e22e !important
+}
+.clj-str {
+    color: #fd971f !important
+}
+
 .list-bg {
     padding: 0.5em !important;
     background-color:rgba(0, 0, 0, 0.5);
-    border-radius: 0.5em;
+    border-radius: 0.1em;
+}
+
+.list-bg-blue {
+    padding: 0.5em !important;
+    background-color:rgba(40, 79, 183, 0.6);
+    border-radius: 0.1em;
+}
+
+.list-bg-orange {
+    padding: 0.5em !important;
+    background-color:rgba(183, 157, 40, 0.7);
+    border-radius: 0.1em;
 }
 
 .list-dark-bg {
