@@ -11,6 +11,16 @@
   color: #fff;
 }
 
+.card-bg {
+  border-radius: 0.5em;
+  background: rgba(0,0,0, 0.7);
+}
+
+.inner {
+  position: absolute;
+  padding: 0.3em !important;
+}
+
 /*
 .card p {
   font-size: 1.3em !important;
@@ -37,18 +47,18 @@
   font-weight: 800;
 }
 
-.col1 {
+.card .col1 {
   color: rgb(255, 168, 68) !important;
 }
 
-.col2 {
+.card .col2 {
   color: rgb(233, 90, 68) !important;
 }
 
-.col3 {
+.card .col3 {
   color: rgb(119, 71, 231) !important;
 }
 
-.col4 {
+.card .col4 {
   color: rgb(57, 143, 255) !important;
 }

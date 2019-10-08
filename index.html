@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/metronom.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/webserver.css">
 
   <link rel="icon" href="img/favicon.png" type="image/png" />
 </head>
@@ -19,23 +20,31 @@
 <body class="dark">
   <div class="reveal">
     <div id="footer">
-      <img alt="" id="footer-left" src="img/metronom-white.png">
+      <img alt="" id="footer-left" src="img/metronom-white-yellow.png">
       <img alt="" id="footer-right" src="img/codetalks-white.png">
     </div>
 
     <div class="slides">
 
+      <!--
       <section class="center" data-background-image="img/bg/codetalks.png">
-        <span>Dr. Tobias Schröder</span>
+        <h1 class="bebas">No Pain - No Gain</h1>
+        <h1 class="bebas subtitle">Using Clojure for Web Applications</h1>
+        <small>code.talks 2019, Hamburg, October 25th </small>
         <br>
-        <br>
-        <h1>No Pain, no Gain</h1>
-        <h1>Using Clojure for Web Applications</h1>
-        <br>
-        <span>Backend</span>
+        <small>
+          <span style="padding: 0 1.5em;">Dr. Tobias Schröder</span>
+          <a href="https://twitter.com/TKrauthoff" target="_blank"><i class="metronom-logo-yellow fab fa-twitter"></i><span class="metronom-logo-yellow"> tbsschroeder</span></a>
+        </small>
+      </section>
+      -->
+
+      <section data-background-image="img/bg/gluecksbaerchi.jpg">
+        <span class="photo-credits" style="color: #666">https://www.bilderwelten.de/p/a-220160/</span>
       </section>
 
       <section data-background-image="img/bg/johnlennon.jpg">
+        <span class="photo-credits" style="color: #fff; left: 37%!important">http://www.johnlennon.com/</span>
         <aside class="notes">
           Imagine a world with no side effects<br>
           Imagine a world with pure functions only<br>
@@ -49,21 +58,124 @@
         </aside>
       </section>
 
-      <section class="center">
+      <section data-background-color="#333333">
+        <table style="margin-bottom: 3em;">
+          <tr>
+            <td style="width: 20%">
+                <img src="img/clj-skull.png" style="vertical-align: middle; padding-top: 1em;">
+            </td>
+            <td>
+              <h2 style="color: #97b1dc!important">No Pain - No Gain</h2>
+              <h3 style="color: #95ca4c!important">Using Clojure for Web Applications</h3>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="center grayscale" data-background-image="img/bg/jenga.jpg" data-background-opacity="0.3">
+        <span class="photo-credits">Photo by Michał Parzuchowski on Unsplash</span>
         <div class="flex-wrap">
           <div class="card card-space">
-            <p class="fragment fade-in">Simplicity</p>
+            <p class="fragment fade-in" data-fragment-index="0">Simplicity</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in">LISP</p>
+            <p class="fragment fade-in" data-fragment-index="2">Interop</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in">Interop</p>
+            <p class="fragment fade-in" data-fragment-index="4">LISP</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in">Immutability</p>
+            <p class="fragment fade-in" data-fragment-index="6">Functional</p>
           </div>
         </div>
+        <div class="outer card-bg" style="width: 98%; margin-top: 0.75em; height: 3em; margin-left: 0.3em">
+          <div class="inner center fragment fade-in-then-out" data-fragment-index="1" style="width: 99%">
+            <span class="fira">(+ 1 2)<br>=> 3</span>
+          </div>
+          <div class="inner fragment fade-in-then-out" data-fragment-index="3" style="width: 99%">
+            <!--
+            <span class="fira">(every? #(Character/isUpperCase %) “HELLO”)<br>=> true</span>
+            -->
+            <div style="margin-top: 0.2em;">
+              <span style="position: relative; top: -0.4em;">Polyglot programming:</span>
+              <img src="img/clj-logo.png" style="height: 1.5em">
+              <span class="fira" style="position: relative; top: -0.4em;"><=></span>
+              <img src="img/java-cup.png" style="height: 1.7em">
+            </div>
+          </div>
+          <div class="inner fragment fade-in-then-out" data-fragment-index="5" style="width: 99%">
+            <p style="margin: 0.5em"></p>
+            <span class="fira" style="margin-top: 0.5em;">Easy since 1958 / REPL / Collections & Lists</span>
+          </div>
+          <div class="inner fragment fade-in" data-fragment-index="7" style="width: 99%">
+              <p style="margin: 0.5em"></p>
+            <span class="fira">Immutability / Pure Funcs / Small Modules</span>
+          </div>
+        </div>
+        <aside class="notes">
+          Interop => Polyglot Programming
+          <br>
+          <br>
+          "As a default architecture mutable objects are terrible."
+          <br>
+          "If you want everything to be familiar, you'll never learn anything new"
+          <br>
+          "Simplicity is hard work. But in the long haul the person with a simpler system is gonna wipe the plate with you. Because they can change things when you are struggling to push elephants around"
+        </aside>
+      </section>
+
+      <section class="center">
+        <span class="photo-credits">http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/</span>
+        <ul class="fira no-bullet-points extra-padding-list" style="font-size: 1.2em">
+          <li>
+            <p>
+              (<span class="clj-symbol">map</span>
+              <span class="clj-arg">cook</span>
+              <span class="clj-core">[</span>🐮 🥔 🐔 🌽<span class="clj-core">]</span>)
+            </p>
+            <p class="fragment fade-in">
+              <span class="clj-res">=></span>
+              <span class="clj-core">[</span>
+              <span class="fragment fade-in">🍔</span>
+              <span class="fragment fade-in">🍟</span>
+              <span class="fragment fade-in">🍗</span>
+              <span class="fragment fade-in">🍿</span>
+              <span class="clj-core">]</span>
+            </p>
+          </li>
+          <li>
+            <p class="fragment fade-in">
+              (<span class="clj-symbol">filter</span>
+              <span class="clj-arg">isVegetarian</span>
+              <span class="clj-core">[</span>🍔 🍟 🍗 🍿<span class="clj-core">]</span>)
+            </p>
+            <p class="fragment fade-in"><span class="clj-res">=></span>
+              <span class="clj-core">[</span>
+              <span class="fragment fade-in">🍟</span>
+              <span class="fragment fade-in">🍿</span>
+              <span class="clj-core">]</span>
+            </p>
+          </li>
+          <li>
+            <p class="fragment fade-in">
+              (<span class="clj-symbol">reduce</span>
+              <span class="clj-arg">eat</span>
+              <span class="clj-core">[</span>🍔 🍟 🍗 🍿<span class="clj-core">]</span>)
+            </p>
+            <p class="fragment fade-in">
+              <span class="clj-res">=></span>
+              <span class="fragment fade-in">💩</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="center">
+        <klipse-snippet class="center" data-language="clojure">
+          nil
+        </klipse-snippet>
+        <br>
+        <span style="font-size: 0.3em">Powered by <a href="http://app.klipse.tech" target="_blank">https://github.com/viebel/klipse</a></span>
       </section>
 
       <section class="center">
@@ -72,44 +184,27 @@
             <td>42 &nbsp; 1.3 &nbsp; 4/3</td>
             <td>Numbers</td>
           </tr>
-          <tr class="fragment fade-in metronom-yellow">
-            <td>"foo" &nbsp; "bar" &nbsp; "baz"</td>
-            <td>Strings</td>
+          <tr class="metronom-yellow fragment fade-in">
+            <td>"f" &nbsp; "oo" &nbsp; "bar"</td>
+            <td>Characters & Strings</td>
           </tr>
-          <tr class="fragment fade-in metronom-green">
-            <td>:foo &nbsp; :bar &nbsp; :baz</td>
+          <tr class="metronom-green fragment fade-in">
+            <td>:foo &nbsp; :bar</td>
             <td>Keywords</td>
           </tr>
-          <tr class="fragment fade-in metronom-red">
+          <tr class="metronom-red fragment fade-in">
             <td>[] &nbsp; '() &nbsp; #{} &nbsp; {}</td>
             <td>Collections (Vector, List, Set, Map)</td>
           </tr>
-          <tr class="fragment fade-in metronom-blue">
-            <td>true &nbsp; false</td>
-            <td>Booleans</td>
+          <tr class="metronom-blue fragment fade-in">
+            <td>nil &nbsp; true &nbsp; false</td>
+            <td>Scalar values</td>
           </tr>
         </table>
         <aside class="notes">
           Vector: Collection of values with indexes<br>
           List: Treat it like a stack with peek and pop
         </aside>
-      </section>
-
-      <section class="center">
-        <ul class="fira no-bullet-points extra-padding-list">
-          <li>
-            <p><span class="clj-symbol">map</span>([🐮,🥔,🐔,🌽), cook]</p>
-            <p class="fragment fade-in"><span class="clj-res">=></span> [🍔,🍟,🍗,🍿]</p>
-          </li>
-          <li>
-            <p class="fragment fade-in"><span class="clj-symbol">filter</span>([🐮,🌽,🐔,🥔], isVegetarian)</p>
-            <p class="fragment fade-in"><span class="clj-res">=></span> [🌽,🥔]</p>
-          </li>
-          <li>
-            <p class="fragment fade-in"><span class="clj-symbol">reduce</span>([🐮,🌽,🐔,🥔])</p>
-            <p class="fragment fade-in"><span class="clj-res">=></span> 💩</p>
-          </li>
-        </ul>
       </section>
 
       <section class="center">
@@ -141,16 +236,51 @@
         </ul>
       </section>
 
+      <section class="center fira">
+        <div class="outer-space">
+          <div class="flex-container">
+              <span class="fragment fade-in emoji" data-fragment-index=1>😞</span>
+              <div class="arrow"><span>-></span></div>
+              <div class="rounded-box col1"><span class="fragment fade-in" data-fragment-index=2>Request</span></div>
+              <div class="arrow"><span>-></span></div>
+              <div class="rounded-box col2"><span class="fragment fade-in" data-fragment-index=3>Web Server</span></div>
+              <div class="arrow"><span>-></span></div>
+              <div class="rounded-box col3"><span class="fragment fade-in" data-fragment-index=4>Route</span></div>
+              <div class="arrow"><span>-></span></div>
+              <div class="rounded-box col4"><span class="fragment fade-in" data-fragment-index=6>DB</span></div>
+          </div>
+          <div style="position: absolute; right: 4.5em; top: 3.8em; transform: rotate(0deg)">
+            <span style="position: absolute; top: -0.5em;">|</span>
+            <span>↓</span>
+          </div>
+          <div class="flex-container flex-reverse">
+              <div class="rounded-box col2"><span class="fragment fade-in" data-fragment-index=8>Web Server</span></div>
+              <div class="arrow"><span><-</span></div>
+              <div class="rounded-box col1"><span class="fragment fade-in" data-fragment-index=9>HTML/CSS/JS</span></div>
+              <div class="arrow"><span><-</span></div>
+              <div class="rounded-box col1"><span class="fragment fade-in" data-fragment-index=11>Response</span></div>
+              <div class="arrow"><span><-</span></div>
+              <span class="fragment fade-in emoji">🥳</span>
+          </div>
+        </div>
+        <div class="lib-box fragment fade-in" data-fragment-index=5 style="position: absolute; top: -1em; left: 9.6em;"><span>Pedestal & Component</span></div>
+        <div class="lib-box fragment fade-in" data-fragment-index=7 style="position: absolute; top: -1em; right: 3em;"><span>Korma</span></div>
+        <div class="lib-box fragment fade-in" data-fragment-index=10 style="position: absolute; top: 8em; left: 12em;"><span>Hiccup</span></div>
+        <div class="lib-box fragment fade-in" data-fragment-index=12 style="position: absolute; top: 8em; left: 4em;"><span>Ring</span></div>
+      </section>
+
       <!--
-      <section data-background-image="img/bg/structure.jpg">
+      <section data-background-image="img/bg/hacker.jpg">
+        <span class="photo-credits">Photo by Ludovic Toinel on Unsplash</span>
       </section>
       -->
 
-      <section data-background-image="img/bg/hacker.jpg">
+      <!--
+      <section data-background-image="img/bg/hacker.jpg" data-background-opacity="0.5">
         <div style="overflow: hidden">
           <div style="width: 30%; float: left">
             <ul class="no-bullet-points">
-              <li class="list-bg-blue fragment fade-in">Backend
+              <li class="list-bg-blue">Backend
                 <ul>
                   <li>Web Server</li>
                   <li>Database</li>
@@ -183,23 +313,41 @@
           Pedestal / Component / Postgres / Docker / Hiccup
         </aside>
       </section>
+      -->
 
+      <!--
       <section class="center">
         <strong style="position: absolute; padding: 15em 0 0 7em">So much new stuff...<br>... need help!</strong>
         <img src="img/catbrow.jpg" style="border-radius: 0.5em">
       </section>
+      -->
 
-      <section class="center" data-background-image="img/bg/pedestal.jpg">
+      <section class="center" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.5">
+        <span class="photo-credits">Photo by Peter Lloyd on Unsplash</span>
         <div style="position: fixed; top: 3em; left: 4em;">
           <h3>Pedestal</h3>
           Libraries for backend & API first
         </div>
       </section>
 
-      <section>
-        <div class="center">
-          <img src="img/pedestal.png" style="width: 85%;">
-        </div>
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal0.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal1.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal2.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal3.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal4.png" style="width: 85%;">
       </section>
 
       <section>
@@ -223,9 +371,18 @@
       </section>
 
       <section data-background-image="img/bg/states.jpg">
+        <span class="photo-credits">Photo by NeONBRAND on Unsplash</span>
       </section>
 
-      <section>
+      <section data-background-image="img/bg/states.jpg" data-background-opacity="0.3">
+        <img src="img/trump1.jpg" style="width: 35%; position: fixed; top: 7em; left: 0; border-radius: 0.5em; border-width: 1.5px; border-style: solid;" data-fragment-index=1>
+        <span class="fragment fade-in" style="position: fixed; left: 5.5em; top: 4.5em; font-size: 2em" data-fragment-index=2>＋</span>
+        <img class="fragment fade-in" src="img/clj-logo.png" style="width: 15%; position: fixed; left: 13em; top: 8em;" data-fragment-index=2>
+        <span class="fragment fade-in" style="position: fixed; right: 5.25em; top: 4.5em; font-size: 2em" data-fragment-index=3>＝</span>
+        <img class="fragment fade-in" src="img/trump2.jpg" style="width: 35%; position: fixed; top: 7em; right: 0; border-radius: 0.5em; border-width: 1.5px; border-style: solid;" data-fragment-index=3>
+      </section>
+
+      <section data-background-image="img/bg/states.jpg" data-background-opacity="0.05">
         <div class="fira" style="overflow: hidden">
           <div style="width: 70%; float: left">
             <p>public class <span class="clj-symbol">Foo</span> {</p>
@@ -233,7 +390,7 @@
               <p>private URL <span class="clj-arg">url</span>;</p>
               <p>private Socket <span class="clj-arg">connection</span>;</p>
               <p>public <span class="clj-symbol">Foo</span>(URL <span class="clj-arg">url</span>)</p>
-              <p>public void <span class="clj-symbol">conntect</span>() <span class="clj-arg">{...}</span>
+              <p>public void <span class="clj-symbol">connect</span>() <span class="clj-arg">{...}</span>
               <p>public void <span class="clj-symbol">shutdown</span>() <span class="clj-arg">{...}</span>
             </div>
             <p>}</p>
@@ -249,10 +406,10 @@
         </div>
       </section>
 
-      <section>
+      <section data-background-image="img/bg/states.jpg" data-background-opacity="0.05">
         <div class="fira" style="overflow: hidden">
           <div style="width: 60%; float: left">
-            <p>(ns <span class="clj-symbol">my-app.database</span>)</p>
+            <p>(ns <span class="clj-symbol">my-app.foo</span>)</p>
             <p>(def <span class="clj-symbol">url</span> <span class="clj-arg">"..."</span>)</p>
             <p>(def <span class="clj-symbol">connection</span> (atom nil))</p>
             <p>(defn <span class="clj-symbol">connection</span> []<br>
@@ -274,33 +431,51 @@
         </div>
       </section>
 
-      <section data-background-image="img/bg/component.jpg">
-        <div class="list-bg" style="position: fixed; top: 1em; left: 0em;">
+      <section data-background-image="img/bg/avocado.jpg" data-background-opacity="0.5">
+        <span class="photo-credits">Photo by Joshua Coleman on Unsplash</span>
+        <div class="list-bg" style="position: fixed; top: 11em; left: 0em;">
           <h3>Component</h3>
           <ul>
             <li>Immutable data structure</li>
-            <li>Managed lifecycle of<br>stateful objects</li>
-            <li>Relationships to other<br>components</li>
+            <li>Managed lifecycle of stateful objects</li>
+            <li>Relationships to other components</li>
           </ul>
         </div>
       </section>
       
-      <section class="center">
-        <img src="img/component.png" style="width: 70%">
+      <section class="center" style="height: 75%" data-background-image="img/bg/avocado.jpg" data-background-opacity="0.1">
+        <img src="img/code/component0.png" style="width: 70%">
       </section>
 
+      <section class="center" style="height: 75%" data-background-image="img/bg/avocado.jpg" data-background-opacity="0.1">
+        <img src="img/code/component1.png" style="width: 70%">
+      </section>
+
+      <section class="center" style="height: 75%" data-background-image="img/bg/avocado.jpg" data-background-opacity="0.1">
+        <img src="img/code/component2.png" style="width: 70%">
+      </section>
+
+      <section class="center" style="height: 75%" data-background-image="img/bg/avocado.jpg" data-background-opacity="0.1">
+        <img src="img/code/component3.png" style="width: 70%">
+      </section>
+      
       <section data-background-image="img/bg/korma.jpeg">
-        <div style="width: 50%" class="center list-dark-bg fragment fade-in">
+        <span class="photo-credits" style="color: #fff">https://www.taste.com.au/recipes/chicken-korma/e25a4f4f-6dcd-4e48-a516-0702a85b87b4</span>
+      </section>
+      
+      <section data-background-image="img/bg/korma.jpeg" data-background-opacity="0.3">
+        <div style="width: 50%" class="center list-dark-bg">
           <h3>Korma</h3>
           It's just tasty SQL for Clojure!
         </div>
       </section>
       
-      <section class="center">
-        <img src="img/korma.png" style="width: 100%">
+      <section class="center" data-background-image="img/bg/korma.jpeg" data-background-opacity="0.1">
+        <img src="img/code/korma.png" style="width: 100%">
       </section>
 
-      <section data-background-image="img/bg/ring.jpg">
+      <section data-background-image="img/bg/ring.jpg" data-background-opacity="0.5">
+        <span class="photo-credits">Photo by Amanda Mocci on Unsplash</span>
         <h3>Ring</h3>
         <ul>
           <li>Simple</li>
@@ -309,12 +484,16 @@
         </ul>
       </section>
       
-      <section class="center">
-        <img src="img/ring.png" style="width: 70%">
+      <section class="center" data-background-image="img/bg/ring.jpg" data-background-opacity="0.2">
+        <img src="img/code/ring.png" style="width: 70%">
       </section>
 
       <section data-background-image="img/bg/hiccup.jpg">
-        <div class="center list-dark-bg fragment fade-in" style="width: 35%; margin-top: 10em;">
+        <span class="photo-credits" style="color: #fff">https://www.hdwallpapers.in/download/how_to_train_your_dragon_hd-2880x1800.jpg</span>
+      </section>
+
+      <section data-background-image="img/bg/hiccup.jpg" data-background-opacity="0.5">
+        <div class="center list-dark-bg" style="width: 35%; margin-top: 10em;">
           <h3>Hiccup</h3>
           <ul>
             <li>Representing HTML</li>
@@ -324,11 +503,12 @@
         </div>
       </section>
       
-      <section class="center">
-        <img src="img/hiccup.png" style="width: 100%">
+      <section class="center" data-background-image="img/bg/hiccup.jpg" data-background-opacity="0.05">
+        <img src="img/code/hiccup.png" style="width: 60%">
       </section>
 
-      <section data-background-image="img/bg/hacker.jpg">
+      <!--
+      <section data-background-image="img/bg/hacker.jpg" data-background-opacity="0.5">
         <div style="overflow: hidden">
           <div style="width: 30%; float: left">
             <ul class="no-bullet-points">
@@ -360,38 +540,91 @@
             </ul>
           </div>
         </div>
-        <div class="list-bg-orange fragment fade-in" style="width: 6em; position: fixed; left: 10em; bottom: 5.1em;">
-          <span>ClojureScript</span>
-        </div>
+        <img class="fragment fade-in" src="img/cljs.png" style="height: 5em; position: absolute; bottom: -0.5em; left: 14em;">
       </section>
+      -->
+
+
+      <section class="center fira">
+          <div class="outer-space">
+            <div class="flex-container">
+                <span class="emoji" data-fragment-index=1>😞</span>
+                <div class="arrow"><span>-></span></div>
+                <div class="rounded-box col1"><span >Request</span></div>
+                <div class="arrow"><span>-></span></div>
+                <div class="rounded-box col2"><span>Web Server</span></div>
+                <div class="arrow"><span>-></span></div>
+                <div class="rounded-box col3"><span>Route</span></div>
+                <div class="arrow"><span>-></span></div>
+                <div class="rounded-box col4"><span>DB</span></div>
+            </div>
+            <div style="position: absolute; right: 4.5em; top: 3.8em; transform: rotate(0deg)">
+              <span style="position: absolute; top: -0.5em;">|</span>
+              <span>↓</span>
+            </div>
+            <div class="flex-container flex-reverse">
+                <div class="rounded-box col2"><span>Web Server</span></div>
+                <div class="arrow"><span><-</span></div>
+                <div class="rounded-box col1"><span>HTML/CSS/JS</span></div>
+                <div class="arrow"><span><-</span></div>
+                <div class="rounded-box col1"><span>Response</span></div>
+                <div class="arrow"><span><-</span></div>
+                <span class="emoji">🥳</span>
+            </div>
+          </div>
+          <div class="lib-box"style="position: absolute; top: -1em; left: 9.6em;"><span>Pedestal & Component</span></div>
+          <div class="lib-box" style="position: absolute; top: -1em; right: 3em;"><span>Korma</span></div>
+          <div class="lib-box" style="position: absolute; top: 8em; left: 12em;"><span>Hiccup</span></div>
+          <div class="lib-box" style="position: absolute; top: 8em; left: 4em;"><span>Ring</span></div>
+        </section>
 
       <section class="center">
         <h3 style="color: #FAAD00 !important">Amazing Web Shop</h3>
-        <a href="localhost:8080" target="_blank">
+        <a href="http://localhost:8080" target="_blank">
           <img src="img/shop.png" style="width: 80%">
+        </a>
+        <a href="https://github.com/tbsschroeder/clojure-webshop-app" target="_blank">
+          <small>https://github.com/tbsschroeder/clojure-webshop-app</small>
         </a>
       </section>
 
-      <section>
-        <h3 class="center">
-          <a href="https://github.com/tbsschroeder" target="_blank">
-            <i class="fab fa-github" style="padding-right: 0.5em"></i>TbsSchroeder
-          </a>
-        </h3>
+      <section data-background-image="img/bg/gluecksbaerchi-clj.jpg">
       </section>
 
-      <section data-background-image="img/bg/johnlennon.jpg">
-        <!--
-        <div class="list-dark-bg center" style="width: 42%">
-          <div style="text-align: justify;">
-            You may say I'm a dreamer<br>
-            But I'm not the only one<br>
-            I hope <i>today</i> you'll join us<br>
-            And the world will be as one
-          </div>
-          <p style="text-align: right"> John Lennon (1971)</p>
+      <section class="center">
+        <h4 class="metronom-logo-yellow">You'll find me at the booth!</h4>
+        <!--http://nickjrcharacters.blogspot.com/2016/09/care-bears-2006-pngs.html-->
+        <img src="img/blue_bear.png" style="position: fixed; height: 10em; left: 0; top: 5em;">
+        <img src="img/green_bear.png" style="position: fixed; height: 11em; right: -1em; top: 5em;">
+        <img src="img/qrcode.png" style="height: 10em; margin-top: 2em;">
+        <div class="center" style="background: #222222; border-radius: 0.5em; padding: 0.4em 0.5em 0.2em 0.4em; margin-top: 2em; font-size: 0.8em; width: 80%">
+          <strong>
+            <div>
+              <table>
+                <tr>
+                  <td>
+                    <span class="metronom-logo-yellow" style="vertical-align: middle; padding-top:1em;">
+                      <i class="fab fa-twitter"></i>
+                      <span>and</span>
+                      <i class="fab fa-instagram"></i>:
+                    </span>
+                  </td>
+                  <td>
+                    <span class="metronom-yellow">@tbsschroeder</span><br>
+                    <span class="metronom-yellow">@joinmetronomnow</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <span class="metronom-red">#METRONOMians</span> 
+              <span class="metronom-green">#codetalkshh</span> 
+              <span class="metronom-red">#passion</span> 
+              <span class="metronom-blue">#ambition</span> 
+              <span class="metronom-green">#purpose</span>
+            </div>
+          </strong>
         </div>
-        -->
       </section>
 
     </div>
@@ -401,6 +634,7 @@
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/head.min.js"></script>
   <script src="js/reveal.js"></script>
+  <script src="js/klipse_reveal.js"></script>
 
   <script>
     // More info https://github.com/hakimel/reveal.js#configuration
@@ -421,7 +655,7 @@
         src: 'js/math.js',
         async: true
       }]
-    })
+    });
 
     var footer = $('#footer').html();
     if (window.location.search.match(/print-pdf/gi)) {

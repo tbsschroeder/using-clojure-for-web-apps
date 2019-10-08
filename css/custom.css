@@ -15,6 +15,13 @@ ul li{
     background: rgba(255, 255, 255, 0.2);
 }
 
+.rounded-box{
+    border-radius: 10px!important;
+}
+.rounded-box span{
+    line-height: 2;
+}
+
 .white-box {
     margin: 0.5em!important;
     padding: 0.1em!important;
@@ -111,4 +118,36 @@ ul li{
     padding: 0.5em !important;
     background-color:rgba(0, 0, 0, 0.7);
     border-radius: 0.5em;
+}
+
+.inline-no-bullet {
+    margin-left: 0!important;
+}
+.inline-no-bullet li {
+    display: inline;
+}
+
+.grayscale .slide-background-content {
+    filter: grayscale(100%);
+}
+
+.reload-clj {
+    position: absolute;
+    top: 1em;
+    right: -1em;
+    color:#E34229;
+}
+
+.reload-clj:hover {
+    color:#b31200;
+    cursor: pointer;
+}
+
+.photo-credits{
+    position: fixed;
+    bottom: 1em;
+    left: 40%;
+    right: 35%;
+    font-size: 0.4em!important;
+    color: #ccc;
 }
