@@ -151,3 +151,14 @@ ul li{
     font-size: 0.4em!important;
     color: #ccc;
 }
+
+.photo-credits a,
+span a {
+    color: #ccc!important;
+    text-decoration: underline;
+}
+
+.photo-credits a:hover,
+span a:hover {
+    color: #faa543!important;
+}

@@ -445,9 +445,11 @@ body.dark .reveal h3 {
      transition: color 0.15s ease;
 }
 
+
 body.dark .reveal a {
-     color: #6694CF !important
+     color: #6694CF;
 }
+
 
 .reveal a:hover {
      color: #8b7c69;
