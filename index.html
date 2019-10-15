@@ -25,9 +25,8 @@
     </div>
 
     <div class="slides">
-
       <section data-background-image="img/bg/gluecksbaerchi.jpg">
-        <span class="photo-credits" style="color: #666">
+        <span class="photo-credits" style="color: #666; left: 35%">
           Photo by <a href="https://www.bilderwelten.de/p/a-220160/" target="_blank" style="color: #555!important">https://www.bilderwelten.de/p/a-220160/</a>
           </span>
       </section>
@@ -48,19 +47,30 @@
           - John Lennon -
         </aside>
       </section>
-
-      <section data-background-color="#333333">
-        <table style="margin-bottom: 3em;">
-          <tr>
-            <td style="width: 20%">
-                <img src="img/clj-skull.png" style="vertical-align: middle; padding-top: 1em;">
-            </td>
-            <td>
-              <h2 style="color: #97b1dc!important">No Pain - No Gain</h2>
-              <h3 style="color: #95ca4c!important">Using Clojure for Web Applications</h3>
-            </td>
-          </tr>
-        </table>
+      
+      <section data-background-image="img/bg/bg_code.svg">
+        <div class="center" style="position: absolute; left: 0.5em; top: -1em; width: 70%">
+        <table>
+            <tr>
+              <td style="width: 20%">
+                  <img src="img/clj-skull.png" style="vertical-align: middle; padding-top: 1em;">
+              </td>
+              <td>
+                <h1 class="bebas">No Pain - No Gain</h1>
+                <span">Using Clojure for Web Applications</span>
+              </td>
+            </tr>
+          </table>
+          <h1 class="subtitle"></h1>
+          <small>code.talks 2019, Hamburg, October 25th </small>
+          <small>
+            <span style="padding: 0 1.5em;">Dr. Tobias Schröder</span>
+            <a href="https://twitter.com/TKrauthoff" target="_blank">
+              <i class="metronom-logo-yellow fab fa-twitter"></i>
+              <span class="metronom-logo-yellow"> tbsschroeder</span>
+            </a>
+          </small>
+        </div>
       </section>
 
       <section class="center grayscale" data-background-image="img/bg/jenga.jpg" data-background-opacity="0.3">
@@ -231,8 +241,8 @@
         </ul>
       </section>
 
-      <section class="center fira">
-        <div class="outer-space">
+      <section class="fira">
+        <div class="outer-space" style="position: absolute;">
           <div class="flex-container">
               <span class="fragment fade-in emoji" data-fragment-index=1>😞</span>
               <div class="arrow"><span>-></span></div>
@@ -244,7 +254,7 @@
               <div class="arrow"><span>-></span></div>
               <div class="rounded-box col4"><span class="fragment fade-in" data-fragment-index=6>DB</span></div>
           </div>
-          <div style="position: absolute; right: 4.5em; top: 3.8em; transform: rotate(0deg)">
+          <div style="position: absolute; right: 1em; top: 3em; transform: rotate(0deg)">
             <span style="position: absolute; top: -0.5em;">|</span>
             <span>↓</span>
           </div>
@@ -259,7 +269,7 @@
           </div>
         </div>
         <div class="lib-box fragment fade-in" data-fragment-index=5 style="position: absolute; top: -1em; left: 9.6em;"><span>Pedestal & Component</span></div>
-        <div class="lib-box fragment fade-in" data-fragment-index=7 style="position: absolute; top: -1em; right: 3em;"><span>Korma</span></div>
+        <div class="lib-box fragment fade-in" data-fragment-index=7 style="position: absolute; top: -1em; left: 23em;"><span>Korma</span></div>
         <div class="lib-box fragment fade-in" data-fragment-index=10 style="position: absolute; top: 8em; left: 12em;"><span>Hiccup</span></div>
         <div class="lib-box fragment fade-in" data-fragment-index=12 style="position: absolute; top: 8em; left: 4em;"><span>Ring</span></div>
       </section>
@@ -268,7 +278,7 @@
         <span class="photo-credits" style="left: 35%">
           Photo by <a href="https://unsplash.com/@plloyd" target="_blank">Peter Lloyd</a> on Unsplash
         </span>
-        <div style="position: fixed; top: 3em; left: 4em;">
+        <div style="position: absolute; top: -8em; left: 4em;">
           <h3>Pedestal</h3>
           Libraries for backend & API first
         </div>
@@ -321,11 +331,13 @@
       </section>
 
       <section data-background-image="img/bg/states.jpg" data-background-opacity="0.3">
-        <img src="img/trump1.jpg" style="width: 35%; position: fixed; top: 7em; left: 0; border-radius: 0.5em; border-width: 1.5px; border-style: solid;" data-fragment-index=1>
-        <span class="fragment fade-in" style="position: fixed; left: 5.5em; top: 4.5em; font-size: 2em" data-fragment-index=2>＋</span>
-        <img class="fragment fade-in" src="img/clj-logo.png" style="width: 15%; position: fixed; left: 13em; top: 8em;" data-fragment-index=2>
-        <span class="fragment fade-in" style="position: fixed; right: 5.25em; top: 4.5em; font-size: 2em" data-fragment-index=3>＝</span>
-        <img class="fragment fade-in" src="img/trump2.jpg" style="width: 35%; position: fixed; top: 7em; right: 0; border-radius: 0.5em; border-width: 1.5px; border-style: solid;" data-fragment-index=3>
+        <div style="display: flex; justify-content: center;">
+          <img src="img/trump1.jpg" style="width: 30%; border-radius: 0.5em; border-width: 1.5px; border-style: solid;">
+          <span class="fragment fade-in" data-fragment-index="0" style="font-size: 2em; padding: 1em 0.5em 1em 0.5em;">＋</span>
+          <img class="fragment fade-in" data-fragment-index="0" src="img/clj-logo.png" style="width: 15%; height: 15%; padding-top: 1em;">
+          <span class="fragment fade-in" data-fragment-index="1" style="font-size: 2em; padding: 1em 0.5em 1em 0.5em;">＝</span>
+          <img class="fragment fade-in" data-fragment-index="2" src="img/trump2.jpg" style="width: 30%; border-radius: 0.5em; border-width: 1.5px; border-style: solid;">
+        </div>
       </section>
 
       <section data-background-image="img/bg/states.jpg" data-background-opacity="0.05">
@@ -381,7 +393,7 @@
         <span class="photo-credits" style="left: 37%">
           Photo by <a href="https://unsplash.com/@joshstyle" targete="_blank">Joshua Coleman</a> on Unsplash
         </span>
-        <div class="list-bg" style="position: fixed; top: 11em; left: 0em;">
+        <div class="list-bg" style="position: absolute; top: 7em; left: 0em;">
           <h3>Component</h3>
           <ul>
             <li>Immutable data structure</li>
@@ -512,8 +524,8 @@
       <section class="center">
         <h4 class="metronom-logo-yellow">You'll find me at the booth!</h4>
         <!--http://nickjrcharacters.blogspot.com/2016/09/care-bears-2006-pngs.html-->
-        <img src="img/blue_bear.png" style="position: fixed; height: 10em; left: 0; top: 5em;">
-        <img src="img/green_bear.png" style="position: fixed; height: 11em; right: -1em; top: 5em;">
+        <img src="img/blue_bear.png" style="position: absolute; height: 10em; left: 0; top: 5em;">
+        <img src="img/green_bear.png" style="position: absolute; height: 11em; right: -1em; top: 5em;">
         <img src="img/qrcode.png" style="height: 10em; margin-top: 2em;">
         <div class="center" style="background: #222222; border-radius: 0.5em; padding: 0.4em 0.5em 0.2em 0.4em; margin-top: 2em; font-size: 0.8em; width: 80%">
           <strong>
@@ -563,7 +575,7 @@
       center: true,
       slideNumber: 'c/t',
       showSlideNumber: 'speaker',
-      transition: 'fade', // none/fade/slide/convex/concave/zoom
+      transition: 'none', // none/fade/slide/convex/concave/zoom
 
       // More info https://github.com/hakimel/reveal.js#dependencies
       dependencies: [{
