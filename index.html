@@ -49,46 +49,55 @@
       </section>
       
       <section data-background-image="img/bg/bg_code.svg">
-        <div class="center" style="position: absolute; left: 0.5em; top: -1em; width: 70%">
-        <table>
-            <tr>
-              <td style="width: 20%">
-                  <img src="img/clj-skull.png" style="vertical-align: middle; padding-top: 1em;">
-              </td>
-              <td>
-                <h1 class="bebas">No Pain - No Gain</h1>
-                <span">Using Clojure for Web Applications</span>
-              </td>
-            </tr>
-          </table>
-          <h1 class="subtitle"></h1>
-          <small>code.talks 2019, Hamburg, October 25th </small>
-          <small>
-            <span style="padding: 0 1.5em;">Dr. Tobias Schröder</span>
-            <a href="https://twitter.com/TKrauthoff" target="_blank">
-              <i class="metronom-logo-yellow fab fa-twitter"></i>
-              <span class="metronom-logo-yellow"> tbsschroeder</span>
-            </a>
-          </small>
+        <table class="center" style="position: absolute; left: 0.5em; top: -1em; width: 70%">
+          <tr>
+            <td style="width: 20%">
+                <img src="img/clj-skull.png" style="vertical-align: middle; padding-top: 1em;">
+            </td>
+            <td>
+              <h1 class="bebas">No Pain - No Gain</h1>
+              <span>Using Clojure for Web Applications</span>
+            </td>
+          </tr>
+        </table>
+      </section>
+      
+      <section class="center" data-background-image="img/bg/depot.jpg">
+        <div class="flex-wrap fragment fade-in">
+          <div class="card card-space-sm">
+            <p class="fragment fade-in">6</p>
+          </div>
+          <div class="card card-space-sm">
+            <p class="fragment fade-in">27</p>
+          </div>
+          <div class="card card-space-sm">
+            <p class="fragment fade-in">180</p>
+          </div>
+          <div class="card card-space-sm">
+            <p class="fragment fade-in">1800</p>
+          </div>
         </div>
       </section>
 
-      <section class="center grayscale" data-background-image="img/bg/jenga.jpg" data-background-opacity="0.3">
-        <span class="photo-credits" style="left: 35%;">
-          Photo by <a href="https://unsplash.com/@mparzuchowski" target="_blank">Michał Parzuchowski</a> on Unsplash
+      <section class="center" data-background-image="img/bg/learn.jpg">
+        <span class="photo-credits" style="color: black">
+          Photo by <a href="https://unsplash.com/@timmossholder" target="_blank" style="color:black!important">Tim Mossholder</a> on Unsplash
         </span>
+      </section>
+
+      <section class="center grayscale" data-background-image="img/bg/learn.jpg" data-background-opacity="0.05">
         <div class="flex-wrap">
           <div class="card card-space">
             <p class="fragment fade-in" data-fragment-index="0">Simplicity</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in" data-fragment-index="2">Interop</p>
+            <p class="fragment fade-in" data-fragment-index="2">Functional</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in" data-fragment-index="4">LISP</p>
+            <p class="fragment fade-in" data-fragment-index="4">Interop</p>
           </div>
           <div class="card card-space">
-            <p class="fragment fade-in" data-fragment-index="6">Functional</p>
+            <p class="fragment fade-in" data-fragment-index="6">LISP</p>
           </div>
         </div>
         <div class="outer card-bg" style="width: 98%; margin-top: 0.75em; height: 3em; margin-left: 0.3em">
@@ -96,9 +105,10 @@
             <span class="fira">(+ 1 2)<br>=> 3</span>
           </div>
           <div class="inner fragment fade-in-then-out" data-fragment-index="3" style="width: 99%">
-            <!--
-            <span class="fira">(every? #(Character/isUpperCase %) “HELLO”)<br>=> true</span>
-            -->
+              <p style="margin: 0.5em"></p>
+            <span class="fira">Immutability / Pure Funcs / Small Modules</span>
+          </div>
+          <div class="inner fragment fade-in-then-out" data-fragment-index="5" style="width: 99%">
             <div style="margin-top: 0.2em;">
               <span style="position: relative; top: -0.4em;">Polyglot programming:</span>
               <img src="img/clj-logo.png" style="height: 1.5em">
@@ -106,13 +116,9 @@
               <img src="img/java-cup.png" style="height: 1.7em">
             </div>
           </div>
-          <div class="inner fragment fade-in-then-out" data-fragment-index="5" style="width: 99%">
+          <div class="inner fragment fade-in" data-fragment-index="7" style="width: 99%">
             <p style="margin: 0.5em"></p>
             <span class="fira" style="margin-top: 0.5em;">Easy since 1958 / REPL / Collections & Lists</span>
-          </div>
-          <div class="inner fragment fade-in" data-fragment-index="7" style="width: 99%">
-              <p style="margin: 0.5em"></p>
-            <span class="fira">Immutability / Pure Funcs / Small Modules</span>
           </div>
         </div>
         <aside class="notes">
@@ -128,8 +134,8 @@
       </section>
 
       <section class="center">
-        <span class="photo-credits" style="left: 35%;">
-          Photo by <a href="http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/" target="_blank">http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/</a>
+        <span class="photo-credits" style="left: 30%;">
+          Idea by <a href="http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/" target="_blank">http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/</a>
           </span>
         <ul class="fira no-bullet-points extra-padding-list" style="font-size: 1.2em">
           <li>
@@ -242,6 +248,39 @@
       </section>
 
       <section class="fira">
+        <div class="outer-space" style="position: absolute; left: 1em; top: 1em;">
+          <div class="flex-container" style="position: absolute; top: 1em;">
+              <span class="emoji fragment fade-in" data-fragment-index=1>😞</span>
+              <div class="arrow"><span>-></span></div>
+              <div class="rounded-box col1"><span class="fragment fade-in" style="padding: 0 0.3em" data-fragment-index=2>Request</span></div>
+              <div class="arrow"><span>-></span></div>
+          </div>
+          <div class="rounded-box" style="position: absolute; left: 10.5em; top: 0em; height: 12em; width: 9.5em; background-color: #6694CF;">
+            <p class="rounded-box col1 center fragment fade-in" style="margin: 0.5em;" data-fragment-index=3>Web Server</p>
+            <div class="flex-container flex-column" style="position: absolute; left: 1em;">
+              <span class="rounded-box col1 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=6>Route</span></span>
+              <span class="rounded-box col3 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=8>DB</span></span>
+              <span class="rounded-box col4 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=10>HTML/CSS/JS</span></span>
+            </div>
+          </div>
+          <div class="flex-container" style="position: absolute; top: 9.5em;">
+              <span class="emoji fragment fade-in" data-fragment-index=15>🥳</span>
+              <div class="arrow"><span><-</span></div>
+              <div class="rounded-box col1"><span class="fragment fade-in" data-fragment-index=12>Response</span></div>
+              <div class="arrow"><span><-</span></div>
+          </div>
+          <div class="lib-box" style="position: absolute; top: -2em; left: 4em;"><span class="fragment fade-in" data-fragment-index=4>Ring</span></div>
+          <div class="lib-box" style="position: absolute; top: -2em; left: 12em;"><span class="fragment fade-in" data-fragment-index=5>Pedestal</span></div>
+          <div class="lib-box" style="position: absolute; top: 3em; left: 21em;"><span class="fragment fade-in" data-fragment-index=7>Pedestal</span></div>
+          <div class="lib-box" style="position: absolute; top: 6em; left: 21em;"><span class="fragment fade-in" data-fragment-index=9>Korma</span></div>
+          <div class="lib-box" style="position: absolute; top: 9em; left: 21em;"><span class="fragment fade-in" data-fragment-index=11>Hiccup</span></div>
+          <div class="lib-box" style="position: absolute; top: 13em; left: 4em;"><span class="fragment fade-in" data-fragment-index=13>Ring</span></div>
+          <div class="lib-box" style="position: absolute; top: 5.5em; left: 2.5em;"><span class="fragment fade-in" data-fragment-index=14>Component</span></div>
+        </div>
+      </section>
+
+      <!--
+      <section class="fira">
         <div class="outer-space" style="position: absolute;">
           <div class="flex-container">
               <span class="fragment fade-in emoji" data-fragment-index=1>😞</span>
@@ -283,46 +322,7 @@
           Libraries for backend & API first
         </div>
       </section>
-
-      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
-        <img src="img/code/pedestal0.png" style="width: 85%;">
-      </section>
-
-      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
-        <img src="img/code/pedestal1.png" style="width: 85%;">
-      </section>
-
-      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
-        <img src="img/code/pedestal2.png" style="width: 85%;">
-      </section>
-
-      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
-        <img src="img/code/pedestal3.png" style="width: 85%;">
-      </section>
-
-      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
-        <img src="img/code/pedestal4.png" style="width: 85%;">
-      </section>
-
-      <section>
-        <img src="img/state/state1.svg">
-      </section>
-
-      <section>
-        <img src="img/state/state2.svg">
-      </section>
-
-      <section>
-        <img src="img/state/state3.svg">
-      </section>
-
-      <section>
-        <img src="img/state/state4.svg">
-      </section>
-
-      <section>
-        <img src="img/state/state5.svg">
-      </section>
+      -->
 
       <section data-background-image="img/bg/states.jpg">
         <span class="photo-credits">
@@ -343,11 +343,11 @@
       <section data-background-image="img/bg/states.jpg" data-background-opacity="0.05">
         <div class="fira" style="overflow: hidden">
           <div style="width: 70%; float: left">
-            <p>public class <span class="clj-symbol">Foo</span> {</p>
+            <p>public class <span class="clj-symbol">Server</span> {</p>
             <div style="margin-left: 1em;">
               <p>private URL <span class="clj-arg">url</span>;</p>
               <p>private Socket <span class="clj-arg">connection</span>;</p>
-              <p>public <span class="clj-symbol">Foo</span>(URL <span class="clj-arg">url</span>)</p>
+              <p>public <span class="clj-symbol">Server</span>(URL <span class="clj-arg">url</span>)</p>
               <p>public void <span class="clj-symbol">connect</span>() <span class="clj-arg">{...}</span>
               <p>public void <span class="clj-symbol">shutdown</span>() <span class="clj-arg">{...}</span>
             </div>
@@ -387,6 +387,26 @@
             <p><i>global effects</i></p>
           </div>
         </div>
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal0.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal1.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal2.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal3.png" style="width: 85%;">
+      </section>
+
+      <section class="center" style="height: 85%;" data-background-image="img/bg/pedestal.jpg" data-background-opacity="0.2">
+        <img src="img/code/pedestal4.png" style="width: 85%;">
       </section>
 
       <section data-background-image="img/bg/avocado.jpg" data-background-opacity="0.5">
@@ -437,25 +457,9 @@
         <img src="img/code/korma.png" style="width: 100%">
       </section>
 
-      <section data-background-image="img/bg/ring.jpg" data-background-opacity="0.5">
-        <span class="photo-credits">
-          Photo by <a href="https://unsplash.com/@amandamocci" targete="_blank">Amanda Mocci</a> on Unsplash
-        </span>
-        <h3>Ring</h3>
-        <ul>
-          <li>Simple</li>
-          <li>Abstracts HTTP</li>
-          <li>Functions for handling<br>parameters, cookies and more</li>
-        </ul>
-      </section>
-      
-      <section class="center" data-background-image="img/bg/ring.jpg" data-background-opacity="0.2">
-        <img src="img/code/ring.png" style="width: 70%">
-      </section>
-
       <section data-background-image="img/bg/hiccup.jpg">
         <span class="photo-credits" style="color: #fff; left: 35%">
-          Photo by <a href="https://www.hdwallpapers.in/download/how_to_train_your_dragon_hd-2880x1800.jpg" target="_blank">
+          © Disney / Photo by <a href="https://www.hdwallpapers.in/download/how_to_train_your_dragon_hd-2880x1800.jpg" target="_blank">
           https://www.hdwallpapers.in/download/how_to_train_your_dragon_hd-2880x1800.jpg
         </a></span>
       </section>
@@ -475,41 +479,55 @@
         <img src="img/code/hiccup.png" style="width: 60%">
       </section>
 
-      <section class="center fira">
-          <div class="outer-space">
-            <div class="flex-container">
-                <span class="emoji" data-fragment-index=1>😞</span>
-                <div class="arrow"><span>-></span></div>
-                <div class="rounded-box col1"><span >Request</span></div>
-                <div class="arrow"><span>-></span></div>
-                <div class="rounded-box col2"><span>Web Server</span></div>
-                <div class="arrow"><span>-></span></div>
-                <div class="rounded-box col3"><span>Route</span></div>
-                <div class="arrow"><span>-></span></div>
-                <div class="rounded-box col4"><span>DB</span></div>
-            </div>
-            <div style="position: absolute; right: 4.5em; top: 3.8em; transform: rotate(0deg)">
-              <span style="position: absolute; top: -0.5em;">|</span>
-              <span>↓</span>
-            </div>
-            <div class="flex-container flex-reverse">
-                <div class="rounded-box col2"><span>Web Server</span></div>
-                <div class="arrow"><span><-</span></div>
-                <div class="rounded-box col1"><span>HTML/CSS/JS</span></div>
-                <div class="arrow"><span><-</span></div>
-                <div class="rounded-box col1"><span>Response</span></div>
-                <div class="arrow"><span><-</span></div>
-                <span class="emoji">🥳</span>
+      <section data-background-image="img/bg/ring.jpg" data-background-opacity="0.5">
+        <span class="photo-credits">
+          Photo by <a href="https://unsplash.com/@amandamocci" targete="_blank">Amanda Mocci</a> on Unsplash
+        </span>
+        <h3>Ring</h3>
+        <ul>
+          <li>Simple</li>
+          <li>Abstracts HTTP</li>
+          <li>Functions for handling<br>parameters, cookies and more</li>
+        </ul>
+      </section>
+      
+      <section class="center" data-background-image="img/bg/ring.jpg" data-background-opacity="0.2">
+        <img src="img/code/ring.png" style="width: 70%">
+      </section>
+
+      <section class="fira">
+        <div class="outer-space" style="position: absolute; left: 1em; top: 1em;">
+          <div class="flex-container" style="position: absolute; top: 1em;">
+              <span class="emoji" data-fragment-index=1>😞</span>
+              <div class="arrow"><span>-></span></div>
+              <div class="rounded-box col1"><span style="padding: 0 0.3em">Request</span></div>
+              <div class="arrow"><span>-></span></div>
+          </div>
+          <div class="rounded-box" style="position: absolute; left: 10.5em; top: 0em; height: 12em; width: 9em; background-color: #6694CF;">
+            <p class="rounded-box col1 center" style="margin: 0.5em;">Web Server</p>
+            <div class="flex-container flex-column" style="position: absolute; left: 1em;">
+              <span class="rounded-box col1 center" style="width: 7em;">Route</span>
+              <span class="rounded-box col3 center" style="width: 7em;">DB</span>
+              <span class="rounded-box col4 center" style="width: 7em;">HTML/CSS/JS</span>
             </div>
           </div>
-          <div class="lib-box"style="position: absolute; top: -1em; left: 9.6em;"><span>Pedestal & Component</span></div>
-          <div class="lib-box" style="position: absolute; top: -1em; right: 3em;"><span>Korma</span></div>
-          <div class="lib-box" style="position: absolute; top: 8em; left: 12em;"><span>Hiccup</span></div>
-          <div class="lib-box" style="position: absolute; top: 8em; left: 4em;"><span>Ring</span></div>
-        </section>
+          <div class="flex-container" style="position: absolute; top: 9.5em;">
+              <span class="emoji">🥳</span>
+              <div class="arrow"><span><-</span></div>
+              <div class="rounded-box col1"><span>Response</span></div>
+              <div class="arrow"><span><-</span></div>
+          </div>
+          <div class="lib-box" style="position: absolute; top: -2em; left: 4em;"><span>Ring</span></div>
+          <div class="lib-box" style="position: absolute; top: -2em; left: 12em;"><span>Pedestal</span></div>
+          <div class="lib-box" style="position: absolute; top: 3em; left: 21em;"><span>Pedestal</span></div>
+          <div class="lib-box" style="position: absolute; top: 6em; left: 21em;"><span>Korma</span></div>
+          <div class="lib-box" style="position: absolute; top: 9em; left: 21em;"><span>Hiccup</span></div>
+          <div class="lib-box" style="position: absolute; top: 13em; left: 4em;"><span>Ring</span></div>
+          <div class="lib-box" style="position: absolute; top: 5.5em; left: 2.5em;"><span>Component</span></div>
+        </div>
+      </section>
 
       <section class="center">
-        <h3 style="color: #FAAD00 !important">Amazing Web Shop</h3>
         <a href="http://localhost:8080" target="_blank">
           <img src="img/shop.png" style="width: 80%">
         </a>
@@ -526,8 +544,8 @@
         <!--http://nickjrcharacters.blogspot.com/2016/09/care-bears-2006-pngs.html-->
         <img src="img/blue_bear.png" style="position: absolute; height: 10em; left: 0; top: 5em;">
         <img src="img/green_bear.png" style="position: absolute; height: 11em; right: -1em; top: 5em;">
-        <img src="img/qrcode.png" style="height: 10em; margin-top: 2em;">
-        <div class="center" style="background: #222222; border-radius: 0.5em; padding: 0.4em 0.5em 0.2em 0.4em; margin-top: 2em; font-size: 0.8em; width: 80%">
+        <img src="img/qrcode.png" style="height: 13em; margin-top: 1em;">
+        <div class="center" style="background: #222222; border-radius: 0.5em; padding: 0.4em 0.5em 0.2em 0.4em; margin-top: 1em; font-size: 0.8em; width: 80%">
           <strong>
             <div>
               <table>
@@ -541,7 +559,7 @@
                   </td>
                   <td>
                     <span class="metronom-yellow">@tbsschroeder</span><br>
-                    <span class="metronom-yellow">@joinmetronomnow</span>
+                    <span class="metronom-yellow">@wearemetronom</span>
                   </td>
                 </tr>
               </table>

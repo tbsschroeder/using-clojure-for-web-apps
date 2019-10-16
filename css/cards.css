@@ -11,6 +11,18 @@
   color: #fff;
 }
 
+.card-space-sm {
+  flex: 0 1 18%;
+  margin: 0.25em !important;
+  border-radius: 0.5em;
+  color: #fff;
+  background-color: #222!important;
+}
+
+.card-space-sm p{
+  font-size: 2em;
+}
+
 .card-bg {
   border-radius: 0.5em;
   background: rgba(0,0,0, 0.7);
@@ -20,12 +32,6 @@
   position: absolute;
   padding: 0.3em !important;
 }
-
-/*
-.card p {
-  font-size: 1.3em !important;
-}
-*/
 
 .card:nth-child(1) {
   background-color: rgb(255, 168, 68);
