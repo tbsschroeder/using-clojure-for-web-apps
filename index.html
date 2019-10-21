@@ -20,8 +20,8 @@
 <body class="dark">
   <div class="reveal">
     <div id="footer">
-      <img alt="" id="footer-left" src="img/metronom-white-yellow.png">
-      <img alt="" id="footer-right" src="img/codetalks-white.png">
+      <img class="footer-img" id="footer-left" src="img/metronom-white-yellow.png" alt="footer-left">
+      <img class="footer-img" id="footer-right" src="img/codetalks-white.png" alt="footer-right">
     </div>
 
     <div class="slides">
@@ -66,7 +66,7 @@
               </div>
               <div class="card card-space-sm">
                 <p class="fragment fade-in" style="line-height: 1;">
-                  &gt;180<br><span style="font-size: 0.5em;">Services</span>
+                  &gt;1000<br><span style="font-size: 0.5em;">Services</span>
                 </p>
               </div>
               <div class="card card-space-sm">
@@ -258,8 +258,8 @@
           <div class="rounded-box" style="position: absolute; left: 10.5em; top: 0em; height: 12em; width: 9.5em; background-color: #6694CF;">
             <p class="rounded-box col1 center fragment fade-in" style="margin: 0.5em;" data-fragment-index=3>Web Server</p>
             <div class="flex-container flex-column" style="position: absolute; left: 1em;">
-              <span class="rounded-box col1 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=6>Route</span></span>
-              <span class="rounded-box col3 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=8>DB</span></span>
+              <span class="rounded-box col1 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=6>Routing</span></span>
+              <span class="rounded-box col3 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=8>Database</span></span>
               <span class="rounded-box col4 center" style="width: 7.5em;"><span class="fragment fade-in" data-fragment-index=10>HTML/CSS/JS</span></span>
             </div>
           </div>
@@ -291,7 +291,7 @@
           <span class="fragment fade-in" data-fragment-index="0" style="font-size: 2em; padding: 1em 0.5em 1em 0.5em;">＋</span>
           <img class="fragment fade-in" data-fragment-index="0" src="img/clj-logo.png" style="width: 15%; height: 15%; padding-top: 1em;">
           <span class="fragment fade-in" data-fragment-index="1" style="font-size: 2em; padding: 1em 0.5em 1em 0.5em;">＝</span>
-          <img class="fragment fade-in" data-fragment-index="2" src="img/trump2.jpg" style="width: 30%; border-radius: 0.5em; border-width: 1.5px; border-style: solid;">
+          <img class="fragment fade-in" data-fragment-index="1" src="img/trump2.jpg" style="width: 30%; border-radius: 0.5em; border-width: 1.5px; border-style: solid;">
         </div>
       </section>
 
@@ -308,7 +308,7 @@
             </div>
             <p>}</p>
           </div>
-          <div class="clj-res fragment fade-in" data-fragment-index="0" style="float: left">
+          <div class="clj-res" style="float: left">
             <p>&nbsp;</p>
             <p><i>static config</i></p>
             <p><i>run state</i></p>
@@ -334,7 +334,7 @@
               (swap! <span class="clj-symbol">connection</span> <span class="clj-arg">"..."</span>))
             </p>
           </div>
-          <div class="clj-res fragment fade-in" data-fragment-index="0" style="float: left">
+          <div class="clj-res" style="float: left">
             <p>&nbsp;</p>
             <p><i>not instantiable</i></p>
             <p><i>global singletons</i></p>
@@ -514,8 +514,8 @@
         <!--http://nickjrcharacters.blogspot.com/2016/09/care-bears-2006-pngs.html-->
         <img src="img/blue_bear.png" style="position: absolute; height: 10em; left: 0; top: 5em;">
         <img src="img/green_bear.png" style="position: absolute; height: 11em; right: -1em; top: 5em;">
-        <img src="img/qrcode.png" style="height: 13em; margin-top: 1em;">
-        <div class="center" style="background: #222222; border-radius: 0.5em; padding: 0.4em 0.5em 0.2em 0.4em; margin-top: 0.5em; font-size: 0.8em; width: 80%">
+        <img src="img/qrcode.png" style="height: 13em; margin-top: 0.5em;">
+        <div id="hashtag-cloud" class="center">
           <strong>
             <div>
               <table>
@@ -563,7 +563,7 @@
       center: true,
       slideNumber: 'c/t',
       showSlideNumber: 'speaker',
-      transition: 'none', // none/fade/slide/convex/concave/zoom
+      transition: 'fade', // none/fade/slide/convex/concave/zoom
 
       // More info https://github.com/hakimel/reveal.js#dependencies
       dependencies: [{
