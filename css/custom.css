@@ -59,16 +59,18 @@ ul li {
     min-width: 4em !important;
     height: auto !important;
     margin: 1em;
+    display: none;
 }
 
 #footer-right {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 4% !important;
+    max-width: 5% !important;
     min-width: 2em !important;
     height: auto !important;
     margin: 1em;
+    display: none;
 }
 
 .clj-symbol {

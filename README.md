@@ -1,5 +1,5 @@
 # No Pain - No Gain: Using Clojure for Web Apps
-Slides for the conference code.talks 2019
+Slides for the conference code.talks 2019 / JavaLand 2020
 
 Online version: https://tbsschroeder.github.io/using-clojure-for-web-apps/
 
