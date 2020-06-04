@@ -154,34 +154,3 @@ ul li {
     color: #b31200;
     cursor: pointer;
 }
-
-.photo-credits {
-    position: fixed;
-    bottom: 1em;
-    left: 40%;
-    font-size: 0.3em !important;
-    color: #ccc;
-}
-
-.photo-credits a,
-span a {
-    color: #ccc !important;
-    text-decoration: underline;
-}
-
-.photo-credits a:hover,
-span a:hover {
-    color: #faa543 !important;
-}
-
-#hashtag-cloud {
-    margin-top: 0.5em;
-    font-size: 0.8em;
-    width: 80%
-}
-
-@media screen and (max-width: 1420px) {
-    #hashtag-cloud {
-        width: 60%;
-    }
-}
