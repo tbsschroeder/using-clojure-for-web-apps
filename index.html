@@ -26,7 +26,7 @@
     </div>
 
     <div class="slides">
-      <section data-background-image="img/bg/gluecksbaerchi.jpg">
+      <section data-background-image="img/bg/hb.jpg">
       </section>
       
       <section>
@@ -37,7 +37,6 @@
           <div style="margin-left: 1em;">
             <h1 class="bebas">
               No <span style="color: #62b246">Pain</span> - No <span style="color: #5e7fbf">Gain</span>
-              <span class="fragment fade-in" style="margin-left: 0.2em;">💪</span>
             </h1>
             <span>Using Clojure for Web Applications</span>
           </div>
@@ -77,7 +76,8 @@
         </div>
       </section>
 
-      <section class="center grayscale" data-background-image="img/bg/learn.jpg" data-background-opacity="0.05" data-auto-animate>
+      <section class="center grayscale" data-background-image="img/bg/depot.jpg" data-background-opacity="0.05" data-auto-animate>
+        <h3>But why Clojure?</h3>
         <div class="flex-wrap">
           <div class="card card-space" data-id="card1">
             <p class="fragment fade-in" data-fragment-index="0">Simplicity</p>
@@ -106,6 +106,8 @@
               <img src="img/clj-logo.png" style="height: 1.5em">
               <span class="fira" style="position: relative; top: -0.4em;"><=></span>
               <img src="img/java-cup.png" style="height: 1.7em">
+              <span class="fira" style="position: relative; top: -0.4em;">&&</span>
+              <img src="img/panda.png" style="height: 1.5em">
             </div>
           </div>
           <div class="inner fragment fade-in" data-fragment-index="7" style="width: 99%">
@@ -126,9 +128,10 @@
       </section>
 
       <section class="center">
+        <h3>Higher Order Functions</h3>
         <ul class="fira no-bullet-points extra-padding-list" style="font-size: 1.2em">
           <li>
-            <p>
+            <p class="fragment fade-in">
               (<span class="clj-symbol">map</span>
               <span class="clj-arg">cook</span>
               <span class="clj-core">[</span>🐮 🥔 🐔 🌽<span class="clj-core">]</span>)
@@ -168,7 +171,9 @@
             </p>
           </li>
         </ul>
-        <small class="center"><a href="http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/" target="_blank">http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/</a></small>
+        <small class="center" style="font-size:0.25em;">
+          <a href="http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/" target="_blank">http://www.globalnerdy.com/2016/06/23/map-filter-and-reduce-explained-using-emoji/</a>
+        </small>
       </section>
 
       <section class="center">
@@ -379,7 +384,7 @@
       </section>
       
       <section data-background-image="img/bg/avocado.jpg" data-background-opacity="0.1" data-auto-animate>
-        <pre data-id="code-animation"><code data-trim data-line-numbers class="clojure">
+        <pre data-id="code-animation"><code data-trim data-line-numbers="-|8,12" class="clojure">
           (defn system [env]
             (component/system-map
             :service-map (build-service-map env)
@@ -615,15 +620,14 @@
         </a>
       </section>
 
-      <section data-background-image="img/bg/gluecksbaerchi-clj.jpg">
+      <section data-background-image="img/bg/brot.jpg">
       </section>
 
-      <section class="center">
+      <section class="center" data-background-image="img/bg/brot.jpg" data-background-opacity="0.2">
         <h4 class="metronom-logo-yellow">📧 tobias.schroeder@metronom.com</h4>
+        <h5 class="metronom-green""><strike>🏙️ GatherTown 🌆</strike></h5>
         <!--http://nickjrcharacters.blogspot.com/2016/09/care-bears-2006-pngs.html-->
-        <img src="img/blue_bear.png" style="position: absolute; height: 10em; left: 0; top: 5em;">
-        <img src="img/green_bear.png" style="position: absolute; height: 11em; right: -1em; top: 5em;">
-        <img src="img/qrcode.svg" style="height: 13em; margin-top: 0.5em;">
+        <img src="img/qrcode.png" style="height: 13em; margin-top: 0.5em;">
         <div id="hashtag-cloud" class="center">
           <strong>
             <div>
@@ -642,13 +646,6 @@
                   </td>
                 </tr>
               </table>
-            </div>
-            <div>
-              <span class="metronom-red">#METRONOMians</span> 
-              <span class="metronom-green">#JAVAland</span> 
-              <span class="metronom-red">#passion</span> 
-              <span class="metronom-blue">#ambition</span> 
-              <span class="metronom-green">#purpose</span>
             </div>
           </strong>
         </div>
