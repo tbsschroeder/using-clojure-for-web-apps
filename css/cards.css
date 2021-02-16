@@ -1,0 +1,45 @@
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-space {
+  flex: 0 1 22%;
+  margin: 0.25em !important;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+.card-space-sm {
+  flex: 0 1 22%;
+  margin: 0.25em !important;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+.card-space-sm p{
+  font-size: 2em;
+  color: white;
+}
+
+.card-bg {
+  border-radius: 0.5em;
+  background: rgba(0,0,0, 0.7);
+}
+
+.inner {
+  position: absolute;
+  padding: 0.3em !important;
+}
+
+.card:nth-child(1) {  background-color: #AFDC64;  font-weight: 800;}
+.card:nth-child(2) {  background-color: #F0D278;  font-weight: 800;}
+.card:nth-child(3) {  background-color: #F58C6E;  font-weight: 800;}
+.card:nth-child(4) {  background-color: #FF5A78;  font-weight: 800;
+}
+
+.card .col1 {  color: #AFDC64 !important;}
+.card .col2 {  color: #F0D278 !important;}
+.card .col3 {  color: #F58C6E !important;}
+.card .col4 {  color: #FF5A78 !important;}

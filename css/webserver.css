@@ -1,0 +1,60 @@
+.outer-space {
+    margin-left: 0.5em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.flex-container.flex-reverse{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.flex-container.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded-box span{
+    margin: 0.5em;
+    color: #fff;
+}
+
+.emoji {
+    font-size: 1.5em!important;
+    width: 1em;
+}
+
+.arrow{
+    width: 2.1em;
+}
+
+.arrow span{
+    margin: 0 0.25em;
+}
+
+.flex-container .col1 {
+    background: #FAAD00;
+}
+.flex-container .col2 {
+    background: #6694CF;
+}
+.flex-container .col3 {
+    background: #E34229;
+}
+.flex-container .col4 {
+    background: #5EC299;
+}
+
+.lib-box {
+    background: #666;
+    border-radius: 2px;
+}
+.lib-box span{
+    margin: 0.5em;
+}
